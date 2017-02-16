@@ -37,4 +37,9 @@ public class LoginActivity extends AppCompatActivity {
         }
 
     }
+
+    public void cadastrar(View v){
+        Intent it = new Intent(this, CadastrarActivity.class);
+        startActivity(it);
+    }
 }

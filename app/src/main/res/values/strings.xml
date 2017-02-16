@@ -4,4 +4,6 @@
     <string name="senha">Senha:</string>
     <string name="login">Login</string>
     <string name="mensagem_erro">Login ou/ Senha Incorreta"</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="title_Cadastrar">Cadastrar</string>
 </resources>

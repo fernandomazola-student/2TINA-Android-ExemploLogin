@@ -11,15 +11,25 @@
     tools:context="exemplologin.segundotina.fiap.com.br.exemplologin.LoginActivity"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/usuario" />
+        android:text="@string/usuario"
+        />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edtNome"/>
+        android:id="@+id/edtNome"
+        android:singleLine="true"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -31,12 +41,30 @@
         android:layout_height="wrap_content"
         android:id="@+id/edtSenha"
         android:inputType="textPassword"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/login"
+        android:layout_weight="1"
         android:id="@+id/btnLogin"
-        android:onClick="logar"/>
+        android:onClick="logar"
+        android:drawableLeft="@drawable/lock"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastrar"
+        android:layout_weight="1"
+        android:id="@+id/btnCadastrar"
+        android:onClick="cadastrar"
+        android:drawableLeft="@drawable/cadastro"/>
+
+
+</LinearLayout>
 
 </LinearLayout>
